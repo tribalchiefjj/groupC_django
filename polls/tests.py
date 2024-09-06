@@ -1,5 +1,6 @@
 import datetime
 
+<<<<<<< HEAD
 from django.test import TestCase
 from django.utils import timezone
 from django.urls import reverse
@@ -95,3 +96,6 @@ class QuestionDetailViewTests(TestCase):
         self.assertContains(response, past_question.question_text)
 
     
+=======
+# Create your tests hereeee.
+>>>>>>> 7b3cca18995a5778c4779fb1f7e0bbf3ca494669
