@@ -11,6 +11,7 @@ class QuestionAdmin(admin.ModelAdmin):
         ("Date information", {"fields": ["pub_date"], "classes": ["collapse"]}),
     ]
     list_display = ["question_text", "pub_date", "was_published_recently"]
+    list_filter = ["pub_date"]  # Added filter for publication date
     inlines = [ChoiceInline]
 
 admin.site.register(Question, QuestionAdmin)
